@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaking | Trevor H. Rudolph | Rudolph Ventures</title>
+<meta name="description" content="Keynotes, moderated panels and live tapings on geopolitics, technology and regulation. Trevor H. Rudolph, former White House OMB cyber chief and Schneider Electric's first VP for Global Digital Policy &amp; Regulation, based in Brussels.">
+<link rel="canonical" href="https://rudolphventures.com/speaking">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Trevor H. Rudolph",
+  "url": "https://rudolphventures.com/speaking",
+  "jobTitle": "Senior Non-Resident Fellow, Atlantic Council GeoTech Center",
+  "address": { "@type": "PostalAddress", "addressLocality": "Brussels", "addressCountry": "BE" },
+  "knowsAbout": ["Cybersecurity policy", "Digital sovereignty", "EU technology regulation", "U.S.-China technology competition", "Transatlantic relations"],
+  "sameAs": ["https://www.linkedin.com/in/trevor-h-rudolph/", "https://www.youtube.com/@MemoRandomShow"]
+}
+</script>
+<style>
+:root {
+  --paper: #f5f6f8;
+  --ink: #13294b;
+  --muted: #4a5670;
+  --rule: #d3d9e3;
+  --accent: #3a5c8c;
+  --accent-hover: #3c6fb0;
+  --tile: #13294b;
+  --tile-ink: #f3f5f8;
+  --tile-muted: #8fa6c7;
+  --f-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, Menlo, "DejaVu Sans Mono", monospace;
+  --gutter: clamp(20px, 5vw, 48px);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--ink); }
+a:hover { color: var(--accent-hover); }
+:focus-visible { outline: 2px solid var(--accent-hover); outline-offset: 3px; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--tile-ink); padding: 8px 14px; z-index: 10; }
+.skip:focus { left: 0; }
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  position: sticky; top: 0; z-index: 5;
+}
+.bar {
+  max-width: 1120px; margin: 0 auto; padding: 14px var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; letter-spacing: 0.16em; font-weight: 700; font-size: 14px; text-transform: uppercase; }
+.mark {
+  width: 34px; height: 40px; border: 1.5px solid var(--ink);
+  display: grid; place-items: center; font-size: 12px; letter-spacing: 0.04em;
+  position: relative;
+}
+.mark::after { content: ""; position: absolute; left: 7px; right: 7px; bottom: 6px; height: 1.5px; background: var(--ink); }
+nav.site-nav { display: flex; gap: 6px 22px; flex-wrap: wrap; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; }
+nav.site-nav a { text-decoration: none; color: var(--muted); padding: 4px 0; border-bottom: 1.5px solid transparent; }
+nav.site-nav a:hover, nav.site-nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+
+main { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
+section { padding: clamp(40px, 7vw, 72px) 0; border-top: 1px solid var(--rule); }
+section:first-of-type { border-top: 0; }
+.kicker { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+h1 { font-size: clamp(26px, 4.4vw, 40px); line-height: 1.12; letter-spacing: 0.03em; text-transform: uppercase; margin: 0 0 22px; max-width: 18em; }
+h2 { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); font-weight: 400; margin: 0 0 26px; }
+h3 { font-size: 20px; line-height: 1.3; margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+.lede { font-size: 19px; color: var(--muted); max-width: 40em; }
+.muted { color: var(--muted); }
+
+.hero { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: start; }
+@media (min-width: 860px) { .hero.has-photo { grid-template-columns: 1.6fr 1fr; gap: 56px; } }
+.hero figure { margin: 0; }
+.hero img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); background: var(--rule); }
+.hero figure:empty { display: none; }
+@media (max-width: 859px) { .hero img { max-height: 380px; object-fit: cover; object-position: center top; } }
+
+.actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.btn {
+  display: inline-block; text-decoration: none; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700;
+  padding: 14px 22px; border: 1.5px solid var(--ink); color: var(--ink); background: transparent;
+}
+.btn.primary { background: var(--ink); color: var(--tile-ink); }
+.btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: #fff; }
+
+.creds { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0; border-top: 1px solid var(--rule); }
+.creds li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.creds strong { display: block; }
+.creds span { color: var(--muted); font-size: 15px; }
+@media (min-width: 720px) { .creds { grid-template-columns: 1fr 1fr; column-gap: 48px; } }
+
+.grid { display: grid; gap: 22px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+.tile { background: var(--tile); color: var(--tile-ink); padding: 28px; }
+.tile h3 { color: var(--tile-ink); }
+.tile p { color: var(--tile-muted); }
+.tile .best { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tile-muted); margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(143,166,199,0.35); }
+.tile .best b { color: var(--tile-ink); font-weight: 400; }
+
+.talk { padding: 26px 0; border-top: 1px solid var(--rule); display: grid; gap: 8px 40px; grid-template-columns: 1fr; }
+.talk:first-of-type { border-top: 0; padding-top: 0; }
+@media (min-width: 860px) { .talk { grid-template-columns: 1fr 1.4fr; } }
+.talk .best { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
+
+.stages { columns: 2 220px; column-gap: 40px; padding: 0; margin: 0; list-style: none; }
+.stages li { padding: 8px 0; border-bottom: 1px solid var(--rule); break-inside: avoid; }
+
+.videos { display: grid; gap: 26px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .videos { grid-template-columns: 1fr 1fr; } }
+.video .frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video h3 { font-size: 17px; margin-top: 12px; }
+.video p { font-size: 15px; color: var(--muted); margin: 0; }
+.linkcard { display: block; text-decoration: none; background: var(--tile); color: var(--tile-ink); padding: 26px; aspect-ratio: 16 / 9; display: flex; flex-direction: column; justify-content: flex-end; }
+.linkcard small { font-family: var(--f-mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--tile-muted); font-size: 12px; margin-bottom: 6px; }
+.linkcard strong { font-size: 19px; line-height: 1.25; }
+.linkcard:hover { background: var(--accent); color: #fff; }
+
+.book { display: grid; gap: 36px; grid-template-columns: 1fr; }
+@media (min-width: 860px) { .book { grid-template-columns: 1.2fr 1fr; gap: 64px; } }
+.checklist { margin: 0 0 18px; padding-left: 20px; }
+.checklist li { margin-bottom: 6px; }
+
+footer { border-top: 1px solid var(--rule); padding: 30px var(--gutter) 48px; }
+footer .in { max-width: 1120px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/" aria-label="Rudolph Ventures home"><span class="mark" aria-hidden="true">RV</span><span>Rudolph Ventures</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/#advisory">Advisory</a>
+      <a href="/#media">Media</a>
+      <a href="/speaking" aria-current="page">Speaking</a>
+      <a href="/#about">About</a>
+      <a href="/#writing">Publications</a>
+      <a href="#book">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div>
+      <p class="kicker">Speaking</p>
+      <h1>Speaking and moderating on geopolitics and technology</h1>
+      <p class="lede">Trevor H. Rudolph speaks and moderates on how great-power competition, digital sovereignty and regulation are reshaping technology and business. He is a former Chief of the Cyber and National Security Unit at the White House Office of Management and Budget and Schneider Electric&rsquo;s first Vice President for Global Digital Policy &amp; Regulation. Based in Brussels, he works across the United States, Europe and Asia.</p>
+      <div class="actions">
+        <a class="btn primary" href="#book">Check availability</a>
+        <a class="btn" href="/Trevor_H_Rudolph_Speaker_One-Sheet.pdf">Speaker one-sheet (PDF)</a>
+      </div>
+    </div>
+    <!-- HEADSHOT: upload the photo to /images/trevor-rudolph-headshot.jpg. If the file is missing, the figure removes itself and the layout stays single-column. -->
+    <figure id="headshot" hidden>
+      <img src="/images/trevor-rudolph-headshot.jpg" alt="Trevor H. Rudolph" width="800" height="1000"
+           onload="var f=document.getElementById('headshot'); f.hidden=false; f.parentElement.classList.add('has-photo');"
+           onerror="this.remove()">
+    </figure>
+  </section>
+
+  <section id="credentials">
+    <h2>Why audiences listen</h2>
+    <ul class="creds">
+      <li><strong>Built federal cybersecurity oversight</strong><span>Chief of the first-ever dedicated cybersecurity oversight unit at the White House Office of Management and Budget.</span></li>
+      <li><strong>Lead architect of the Cybersecurity National Action Plan</strong><span>Secured $19 billion in federal investment, the largest cybersecurity investment in U.S. history at the time.</span></li>
+      <li><strong>Built Schneider Electric&rsquo;s global government affairs function</strong><span>First Vice President for Global Digital Policy &amp; Regulation, across North America, Europe and Asia-Pacific.</span></li>
+      <li><strong>2024 ITI International Advocacy Award</strong><span>Awarded to the team he led, for a multi-year global regulatory harmonisation campaign.</span></li>
+      <li><strong>Atlantic Council GeoTech Center</strong><span>Senior Non-Resident Fellow, writing on EU digital sovereignty and transatlantic technology policy.</span></li>
+      <li><strong>Two-time Federal 100 winner, CISSP</strong><span>Co-Chair of the ITI Cybersecurity Committee and advisory board member of the DOE/NARUC Cybersecurity Advisory Group.</span></li>
+    </ul>
+  </section>
+
+  <section id="formats">
+    <h2>Formats</h2>
+    <div class="grid two">
+      <div class="tile">
+        <h3>Keynote</h3>
+        <p>A talk built around your audience&rsquo;s decisions: what is changing, what it means for their business, and what to do about it.</p>
+        <p class="best">Best for <b>conferences, association meetings, executive summits</b></p>
+      </div>
+      <div class="tile">
+        <h3>Moderated panel or fireside chat</h3>
+        <p>Trevor moderated the Tech Triangle panel on AI, cyber and nuclear at the 2026 World Emerging Security Forum in Seoul.</p>
+        <p class="best">Best for <b>security, policy and technology conferences</b></p>
+      </div>
+      <div class="tile">
+        <h3>Live taping of Memo: Random</h3>
+        <p>Trevor&rsquo;s interactive geopolitical talk show, taped at your event with expert guests and audience participation.</p>
+        <p class="best">Best for <b>conferences, member events, corporate summits</b></p>
+      </div>
+      <div class="tile">
+        <h3>Off-site or internal briefing</h3>
+        <p>A tailored session for leadership teams on geopolitical and regulatory risk in your sector.</p>
+        <p class="best">Best for <b>boards, executive teams, government affairs groups</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="talks">
+    <h2>Signature talks</h2>
+
+    <article class="talk">
+      <div><h3>The Regulatory Gauntlet: Turning Global Cyber Compliance Into Competitive Advantage</h3></div>
+      <div>
+        <p>Any regulatory action in one region triggers a reaction in competing regions. Trevor covers the EU&rsquo;s NIS2, Cyber Resilience Act, DORA and AI Act alongside the non-EU rules that collide with them: U.S. National Defense Authorization Act Section 889, U.S. Commerce Department Entity List designations, China&rsquo;s Unreliable Entity List, and China&rsquo;s Cybersecurity Law, Data Security Law and Personal Information Protection Law. Drawing on his work building Schneider Electric&rsquo;s global government affairs function, he shows executives how to treat regulatory pressure as a market differentiator rather than a cost center, with a playbook for aligning legal, security and government affairs teams before the next rule lands.</p>
+        <p class="best">Best for corporate leadership, industry associations, government affairs teams.</p>
+      </div>
+    </article>
+
+    <article class="talk">
+      <div><h3>Great-Power Tech Competition: What U.S.&ndash;China Rivalry Means for Industry</h3></div>
+      <div>
+        <p>Washington and Beijing&rsquo;s contest over technology (export controls, entity listings, data and supply-chain rules, and the race for AI and semiconductors) lands on the companies caught in the middle. Trevor shows leaders how to read the signals, manage reputational, legal and commercial risk, and plan for a world of competing technology blocs. He chaired the cross-functional committee at Schneider Electric that turned Entity List designations, Section 889 compliance and EU import controls into working compliance frameworks.</p>
+        <p class="best">Best for corporate, supply chain, legal, security, trade and investor audiences.</p>
+      </div>
+    </article>
+
+    <article class="talk">
+      <div><h3>Avoiding Digital Divorce: Sovereign Clouds and the Threat of a U.S. Kill Switch</h3></div>
+      <div>
+        <p>As governments push for sovereign clouds, a hard question follows: what happens if access to foreign-controlled technology can be switched off? Trevor, who presented on this at GovWare Singapore, examines how geopolitics is reshaping cloud and infrastructure decisions, and what governments and companies can do now to reduce dependency without splitting the digital world apart.</p>
+        <p class="best">Best for government, critical infrastructure and technology audiences.</p>
+      </div>
+    </article>
+
+    <article class="talk">
+      <div><h3>Inside the Situation Room: What the White House Taught Me About Leading Through Crisis</h3></div>
+      <div>
+        <p>Before the age of 40, Trevor directed the federal response to the OPM data breach, an attack with a clear espionage element, and was lead architect of the Cybersecurity National Action Plan that followed. He shares what holds up when a breach or regulatory shock hits: who needs to hear what, from whom, and when. He also covers the 30-Day Cybersecurity Sprint, which lifted multi-factor authentication across the federal government by 30% in a month, and recounts how the story followed him to Beijing in 2018, where Chinese government officials, meeting him in his Schneider Electric role, had compiled a dossier on him and wanted to put their questions to him alone.</p>
+        <p class="best">Best for leadership, government and cybersecurity audiences.</p>
+      </div>
+    </article>
+
+    <article class="talk">
+      <div><h3>Anatomy of a Breach: What the OPM Hack Teaches Us About Cyber Conflict in the AI Era</h3></div>
+      <div>
+        <p>Trevor, who directed the federal response, walks step by step through the 2014&ndash;15 OPM intrusion: a stolen contractor credential, valid logins that looked like normal traffic, and about eleven months undetected. He then examines why China-linked actors wanted personnel data, why Washington treated it as espionage rather than an act of war, and what that line means for deterrence. He closes by fast-forwarding to 2026, where the same weak points of identity, third-party trust and slow detection meet attackers and defenders operating at machine speed with AI. Built to be interactive, with audience discussion breaks.</p>
+        <p class="best">Best for university, security, government and corporate audiences.</p>
+      </div>
+    </article>
+
+    <article class="talk">
+      <div><h3>The Digital Sovereignty Triad: What Europe&rsquo;s Tech Rules Mean for Every Global Business</h3></div>
+      <div>
+        <p>Drawing on his Atlantic Council GeoTech Center research, Trevor explains what Europe&rsquo;s digital sovereignty agenda means in practice for companies, governments and their suppliers on both sides of the Atlantic.</p>
+        <p class="best">Best for international business, technology and policy audiences.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="watch">
+    <h2>Watch</h2>
+    <div class="videos">
+      <div class="video" style="grid-column: 1 / -1">
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/EcfMNrIh_uk" title="Trevor H. Rudolph speaking reel" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        <h3>Speaking reel</h3>
+        <p>Moderating, hosting and analysis, 2 minutes.</p>
+      </div>
+      <div class="video">
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/9sJSHP_-DK0" title="Memo: Random Episode 1: The Trump-Xi Summit in DC (Condensed Version)" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        <h3>Memo: Random, Episode 1: The Trump-Xi Summit in DC</h3>
+        <p>Condensed version, with Naomi Wilson of ITI.</p>
+      </div>
+      <div class="video">
+        <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/rEObl78WJLE" title="The Impact Of Regulation On Multinational Companies, S4" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        <h3>The Impact of Regulation on Multinational Companies</h3>
+        <p>S4, with Dale Peterson and Ryan Rathbun.</p>
+      </div>
+      <a class="linkcard" href="https://www.linkedin.com/feed/update/urn:li:activity:7506354972469485569/" rel="noopener">
+        <small>On LinkedIn</small>
+        <strong>Tech Triangle: AI, Cyber, and Nuclear<br><span style="font-weight:400;font-size:15px">World Emerging Security Forum, Seoul</span></strong>
+      </a>
+      <a class="linkcard" href="https://youtube.com/shorts/GaPEsNV2UlM" rel="noopener">
+        <small>On YouTube</small>
+        <strong>Can Europe take over the digital world?<br><span style="font-weight:400;font-size:15px">Digital sovereignty panel highlight</span></strong>
+      </a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS: add only real, approved quotes. Delete the comment markers around this block once you have at least two.
+  <section id="testimonials">
+    <h2>What organizers say</h2>
+    <div class="grid two">
+      <blockquote class="tile"><p>&ldquo;QUOTE.&rdquo;</p><p class="best"><b>Name</b>, Title, Organization</p></blockquote>
+    </div>
+  </section>
+  -->
+
+  <section id="stages">
+    <h2>Past stages</h2>
+    <ul class="stages">
+      <li>RSA Conference</li>
+      <li>IQT The Hague</li>
+      <li>S4</li>
+      <li>CyberWeek, Tel Aviv University</li>
+      <li>GovWare, Singapore</li>
+      <li>World Emerging Security Forum, Seoul</li>
+    </ul>
+  </section>
+
+  <section id="book">
+    <h2>Check availability</h2>
+    <div class="book">
+      <div>
+        <p class="lede">Tell us about your event and we will reply with availability and terms. Fees depend on format, travel and recording rights, and are sent on inquiry.</p>
+        <p>Useful to include:</p>
+        <ul class="checklist">
+          <li>Event name, date and location (or virtual)</li>
+          <li>Audience profile and size</li>
+          <li>Format: keynote, moderated panel, live taping or briefing</li>
+          <li>Topic you have in mind</li>
+          <li>Budget range, if you have one</li>
+        </ul>
+        <div class="actions">
+          <a class="btn primary" href="mailto:info@rudolphventures.com?subject=Speaking%20inquiry%3A%20Trevor%20H.%20Rudolph&amp;body=Event%20name%3A%0D%0ADate%20and%20location%3A%0D%0AAudience%20and%20size%3A%0D%0AFormat%3A%0D%0ATopic%3A%0D%0ABudget%20range%3A%0D%0A">Email an inquiry</a>
+          <a class="btn" href="/Trevor_H_Rudolph_Speaker_One-Sheet.pdf">Speaker one-sheet (PDF)</a>
+        </div>
+      </div>
+      <div>
+        <p class="muted">Speaker bureaus and agencies: please use the same address. A one-sheet, bio, headshots and references are available on request.</p>
+        <p><a href="mailto:info@rudolphventures.com">info@rudolphventures.com</a><br>Brussels, Belgium</p>
+        <p>Downloads: <a href="/Trevor_H_Rudolph_Speaker_One-Sheet.pdf">one-sheet (PDF)</a> &middot; <a href="/images/trevor-rudolph-headshot-highres.jpg" download>headshot, high-resolution (JPG)</a> &middot; <a href="/images/trevor-rudolph-headshot-square.jpg" download>headshot, square (JPG)</a></p>
+        <p><a href="https://www.linkedin.com/in/trevor-h-rudolph/" rel="noopener">LinkedIn</a> &middot; <a href="https://www.youtube.com/@MemoRandomShow" rel="noopener">Memo: Random on YouTube</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="in">
+    <span>&copy; 2026 Rudolph Ventures. Brussels, Belgium.</span>
+    <span><a href="/">Rudolph Ventures home</a></span>
+  </div>
+</footer>
+</body>
+</html>
