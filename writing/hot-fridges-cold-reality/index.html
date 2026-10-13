@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot Fridges, Cold Reality | Trevor H. Rudolph | Rudolph Ventures</title>
+<meta name="description" content="Trevor H. Rudolph on the cyberattack on French supermarket refrigeration systems: why attackers still exploit basic weaknesses, what recovery will cost, and what it means for EU cyber policy.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rudolphventures.com/writing/hot-fridges-cold-reality">
+<meta property="og:url" content="https://rudolphventures.com/writing/hot-fridges-cold-reality">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Rudolph Ventures">
+<meta property="og:title" content="Hot Fridges, Cold Reality: What the French Supermarket Cyberattack Says About Legacy Systems">
+<meta property="og:description" content="Trevor H. Rudolph on the cyberattack on French supermarket refrigeration systems: why attackers still exploit basic weaknesses, what recovery will cost, and what it means for EU cyber policy.">
+<meta property="og:image" content="https://rudolphventures.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hot Fridges, Cold Reality: What the French Supermarket Cyberattack Says About Legacy Systems">
+<meta name="twitter:description" content="Trevor H. Rudolph on the cyberattack on French supermarket refrigeration systems: why attackers still exploit basic weaknesses, what recovery will cost, and what it means for EU cyber policy.">
+<meta name="twitter:image" content="https://rudolphventures.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hot Fridges, Cold Reality: What the French Supermarket Cyberattack Says About Legacy Systems",
+  "datePublished": "2026-10-13",
+  "author": {
+    "@type": "Person",
+    "name": "Trevor H. Rudolph",
+    "url": "https://www.linkedin.com/in/trevor-h-rudolph/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Rudolph Ventures",
+    "url": "https://rudolphventures.com/"
+  },
+  "mainEntityOfPage": "https://rudolphventures.com/writing/hot-fridges-cold-reality",
+  "description": "Trevor H. Rudolph on the cyberattack on French supermarket refrigeration systems: why attackers still exploit basic weaknesses, what recovery will cost, and what it means for EU cyber policy."
+}
+</script>
+<style>
+:root {
+  --paper: #f5f6f8;
+  --ink: #13294b;
+  --muted: #4a5670;
+  --rule: #d3d9e3;
+  --accent: #3a5c8c;
+  --accent-hover: #3c6fb0;
+  --tile: #13294b;
+  --tile-ink: #f3f5f8;
+  --tile-muted: #8fa6c7;
+  --f-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  --f-mono: "IBM Plex Mono", Consolas, Menlo, "DejaVu Sans Mono", monospace;
+  --gutter: clamp(20px, 5vw, 48px);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--ink); }
+a:hover { color: var(--accent-hover); }
+:focus-visible { outline: 2px solid var(--accent-hover); outline-offset: 3px; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--tile-ink); padding: 8px 14px; z-index: 10; }
+.skip:focus { left: 0; }
+
+header.site {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  position: sticky; top: 0; z-index: 5;
+}
+.bar {
+  max-width: 1120px; margin: 0 auto; padding: 14px var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; letter-spacing: 0.16em; font-weight: 700; font-size: 14px; text-transform: uppercase; }
+.mark {
+  width: 34px; height: 40px; border: 1.5px solid var(--ink);
+  display: grid; place-items: center; font-size: 12px; letter-spacing: 0.04em;
+  position: relative;
+}
+.mark::after { content: ""; position: absolute; left: 7px; right: 7px; bottom: 6px; height: 1.5px; background: var(--ink); }
+nav.site-nav { display: flex; gap: 6px 22px; flex-wrap: wrap; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; }
+nav.site-nav a { text-decoration: none; color: var(--muted); padding: 4px 0; border-bottom: 1.5px solid transparent; }
+nav.site-nav a:hover, nav.site-nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--ink); }
+
+main { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
+section { padding: clamp(40px, 7vw, 72px) 0; border-top: 1px solid var(--rule); }
+section:first-of-type { border-top: 0; }
+.kicker { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+h1 { font-size: clamp(26px, 4.4vw, 40px); line-height: 1.12; letter-spacing: 0.03em; text-transform: uppercase; margin: 0 0 22px; max-width: 18em; }
+h2 { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--accent); font-weight: 400; margin: 0 0 26px; }
+h3 { font-size: 20px; line-height: 1.3; margin: 0 0 8px; }
+p { margin: 0 0 14px; }
+.lede { font-size: 19px; color: var(--muted); max-width: 40em; }
+.muted { color: var(--muted); }
+
+footer { border-top: 1px solid var(--rule); padding: 30px var(--gutter) 48px; }
+footer .in { max-width: 1120px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px 28px; justify-content: space-between; font-size: 14px; color: var(--muted); }
+
+.article-head { padding-bottom: clamp(24px, 4vw, 40px); }
+.article-head h1 { max-width: 22em; text-transform: none; letter-spacing: 0; font-size: clamp(28px, 4.6vw, 42px); }
+.byline { font-family: var(--f-mono); font-size: 13px; letter-spacing: 0.08em; color: var(--muted); margin: 0; }
+article.post { max-width: 42em; padding-top: 0; }
+article.post p { margin: 0 0 18px; }
+article.post h2 { font-family: var(--f-sans); font-size: 21px; line-height: 1.3; letter-spacing: 0; text-transform: none; color: var(--ink); font-weight: 700; margin: 38px 0 12px; }
+.back { margin-top: 36px; font-size: 15px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="/" aria-label="Rudolph Ventures home"><span class="mark" aria-hidden="true">RV</span><span>Rudolph Ventures</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/#advisory">Advisory</a>
+      <a href="/#media">Media</a>
+      <a href="/speaking">Speaking</a>
+      <a href="/#about">About</a>
+      <a href="/#writing" aria-current="page">Publications</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="article-head">
+    <p class="kicker">Blog</p>
+    <h1>Hot Fridges, Cold Reality: What the French Supermarket Cyberattack Says About Legacy Systems</h1>
+    <p class="byline">Blog by Trevor Rudolph, Founder of Rudolph Ventures &middot; October 13, 2026</p>
+  </section>
+
+  <article class="post">
+      <p>I woke up this morning for the opening day of Singapore International Cyber Week, where I am speaking at <a target="_blank" rel="noopener" href="https://www.govware.sg/govware2026-conference-agenda/avoiding-digital-divorce-geopolitics-sovereign-clouds-threat-kill-switch">GovWare</a> on October 15<sup>th</sup>, to the <a target="_blank" rel="noopener" href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">news</a> that hackers had infiltrated the cooling systems at hundreds of supermarkets throughout France, resulting in fires (according to the Paris prosecutor's <a target="_blank" rel="noopener" href="https://www.usnews.com/news/world/articles/2026-10-12/hackers-heat-french-supermarket-fridges-sparking-fires-and-food-losses">office</a>) and spoiled foods estimated to be worth millions of euros. Reportedly, hackers gained control of the software provided by Danish engineering firm Danfoss that regulates the temperature of the refrigeration units, forcing some to warm to as much as 122°F overnight. As of this writing, there are no claims of responsibility or motivations for the attack that hit the French supermarkets while the country is reeling from nationwide student <a target="_blank" rel="noopener" href="https://edition.cnn.com/2026/10/06/europe/france-student-protests-intl">protests</a> over schooling conditions and systemic inequality. Here are my reflections on this latest cyberattack:</p>
+      <h2>In the age of AI, attackers still exploit basic weaknesses</h2>
+      <p>Initial <a target="_blank" rel="noopener" href="https://www.afp.com/en/french-supermarkets-suffer-refrigerator-shutdown-after-unprecedented-cyberattack">reporting</a> suggests that the attackers targeted older versions of Danfoss control software. Danfoss told AFP that most of the affected units are older AK-SM800 and AK-SC355 models that no longer receive software or security updates, and that one AK-SM800 version was running outdated firmware. France's cybersecurity agency, ANSSI, has identified a vulnerability in Danfoss software, but the specific flaw has not been made public. <a target="_blank" rel="noopener" href="https://itwire.com/guest-articles/guest-research/chilling-discoveries-claroty-finds-multiple-security-vulnerabilities-in-danfoss-and-copeland-refrigeration-controllers">Vulnerabilities in the newer AK-SM 800A line</a> were disclosed and fixed in 2025. In a statement, Danfoss said that it had "<a target="_blank" rel="noopener" href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">long advised</a>" customers to keep systems up to date.</p>
+      <p>In 2026, it is amazing to me that <a target="_blank" rel="noopener" href="https://watchtowr.com/resources/verizon-dbir-2026-vulnerability-exploitation/">vulnerability exploitation</a> is still the number one-way breaches start (in Verizon's 2026 Data Breach Investigations Report, 31% of breaches, up from 20% a year earlier). In my experience, this happens because firms do not employ enough cybersecurity professionals who can defend against both information technology and operational technology (like the equipment exposed in the supermarket hack) attacks. In addition, firms can be reluctant to patch for fear of disruption to operational systems or due to the costs of the underlying upgrades. A further question is how the attackers reached these systems. The entry route has not been made public, so whether the weak point was exposed controllers, a known vulnerability, or a contractor's remote access remains an open question.</p>
+      <h2>Recovering from the attack will likely cost more than updating systems would have</h2>
+      <p>Although damage is still being assessed, some stores have already <a target="_blank" rel="noopener" href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">reported</a> costs of hundreds of thousands of euros, and given the scale of the attack, it would not be surprising if the total cost reaches tens of millions of euros. This would seem to suggest that patching or replacing legacy systems and firmware would likely have been cheaper than dealing with such a catastrophic attack. This, of course, is easier said than done for the grocery industry that is notoriously low <a target="_blank" rel="noopener" href="https://www.forbes.com/sites/sageworks/2016/10/03/the-15-least-profitable-industries-in-the-u-s/">margin</a>.</p>
+      <h2>Was the attack connected to the protest movement, geopolitical events, or something else?</h2>
+      <p>As of this writing, there have been no reports of attribution or motivations in the attack. The timing is notable in that the cyberattack occurred in the middle of these protests, but there is no evidence of a link, and it would seem strange if someone aligned to the protest movement would attack food retailers, thus jeopardizing the protesters themselves. It is possible that the attack was part of the broader Russian-linked hybrid warfare <a target="_blank" rel="noopener" href="https://www.ft.com/content/da71c823-ca31-4eaa-8e6e-6baacea986a4?syn-25a6b1a6=1">campaign</a> occurring against European nations. Such an attack would likely not breach the threshold of an act of war, but is obviously disruptive and dangerous. I would add that it is interesting that there have been no early reports of ransomware demands, which may suggest that organized crime was not involved.</p>
+      <h2>Vulnerabilities in newer Danfoss controllers were disclosed and fixed in 2025</h2>
+      <p>Vulnerabilities in Danfoss's newer AK-SM 800A refrigeration controllers were found by security firm Claroty and fixed by Danfoss in 2025, and the U.S. Cybersecurity and Infrastructure Security Agency (CISA) published an <a target="_blank" rel="noopener" href="https://www.cisa.gov/news-events/ics-advisories/icsa-25-140-03">advisory</a> in May 2025. Claroty <a target="_blank" rel="noopener" href="https://itwire.com/guest-articles/guest-research/chilling-discoveries-claroty-finds-multiple-security-vulnerabilities-in-danfoss-and-copeland-refrigeration-controllers">reported</a> publicly on its full findings in August 2026 and advised customers to upgrade to the latest firmware provided by Danfoss. It has not been established that these are the flaws used in this attack. Danfoss says most of the units hit in France were older AK-SM800 and AK-SC355 models that no longer receive updates. Whatever the entry point, responsibility for keeping these systems secure is shared among manufacturers, retailers and the maintenance contractors who manage them.</p>
+      <h2>What this means for EU policy</h2>
+      <p>EU Commissioner Christophe Hansen has already <a target="_blank" rel="noopener" href="https://www.geo.tv/latest/686205-france-supermarket-food-spoilage-hack-everything-to-know-about-cyberattack">warned</a> that "food security requires more attention at all levels." This is the kind of incident the EU's new cyber rules were written for. Under the Cyber Resilience Act, manufacturers must report actively exploited vulnerabilities in their products, and those reporting obligations began to apply on September 11, 2026, including for products already on the market. <a target="_blank" rel="noopener" href="https://eur-lex.europa.eu/eli/dir/2022/2555/oj">NIS2</a> covers food businesses engaged in wholesale distribution and industrial production and processing, so retailers may fall in scope through their wholesale or logistics operations, depending on size and national transposition. Neither framework fully solves the problem of unsupported operational technology that is already installed. The CRA's design and update-support requirements apply only to products placed on the market from December 2027.</p>
+      <h2>So much wasted food</h2>
+      <p>It pains me to see the sheer amount of wasted food involved in this attack. The absence of a ransom demand or a claim of responsibility so far does not tell us who was behind the attack. The attackers appear to have wanted to maximize harm, which is consistent with a state actor, a hacktivist group, or a criminal group that has not yet made contact. If the <a target="_blank" rel="noopener" href="https://www.abc.net.au/news/2026-10-13/french-supermarkets-hacked-causing-fires-and-food-loss/107258724">reported</a> spread beyond France is confirmed, it would suggest a campaign aimed at a maximum destruction and geopolitical dimensions. Either way, it raises the question: what sector could be targeted next? Similar controllers appear to be <a target="_blank" rel="noopener" href="https://itwire.com/guest-articles/guest-research/chilling-discoveries-claroty-finds-multiple-security-vulnerabilities-in-danfoss-and-copeland-refrigeration-controllers">used</a> in pharmaceutical cold storage and warehouses and food plants where a failure could be even more consequential.</p>
+    <p class="back"><a href="/#writing">&larr; Selected publications</a></p>
+  </article>
+</main>
+
+<footer>
+  <div class="in">
+    <span>&copy; 2026 Rudolph Ventures. Brussels, Belgium.</span>
+    <span><a href="/">Rudolph Ventures home</a></span>
+  </div>
+</footer>
+</body>
+</html>
